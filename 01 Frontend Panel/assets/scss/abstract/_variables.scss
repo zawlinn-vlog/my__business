@@ -1,0 +1,15 @@
+// Variables
+
+$color__secondary: #096b68;
+$light__secondary: #129990;
+$lighter__secondary: #90d1ca;
+$color__primary: #fffbde;
+$color__text: #333;
+
+$colors: (
+  "primary": $color__primary,
+  "secondary": $color__secondary,
+  "ltsecondary": $light__secondary,
+  "wtsecondary": $lighter__secondary,
+  "text": $color__text,
+);
