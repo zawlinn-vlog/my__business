@@ -1,9 +1,39 @@
 //
 
 @use "../abstract/variables" as var;
+@use "../abstract/functions" as fun;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
   @each $name, $color in var.$colors {
     --#{$name}-color: #{$color};
   }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: fun.getColor(text);
+}
+
+ul,
+ol {
+  list-style: none;
 }

@@ -1,0 +1,15 @@
+//
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  &-container {
+    display: flex;
+    gap: 2.5rem;
+
+    padding: 2rem 0;
+
+    font-size: 1.8rem;
+  }
+}
