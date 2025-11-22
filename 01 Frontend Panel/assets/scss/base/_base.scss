@@ -26,11 +26,13 @@ html {
 
 body {
   font-size: 1.5rem;
+  background: fun.getColor("secondary");
+  color: fun.getColor(text);
 }
 
 a {
   text-decoration: none;
-  color: fun.getColor(text);
+  color: fun.getColor(text) !important;
 }
 
 ul,

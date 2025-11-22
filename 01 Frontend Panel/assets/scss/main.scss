@@ -1,8 +1,11 @@
 //
 
 @forward "./base/base";
+@forward "./base/utilities";
 
 @forward "./components/navbar";
-@forward "./components/carousel";
+@forward "./components/btns";
 
 @forward "./layout/layout";
+
+@forward "./pages/home";

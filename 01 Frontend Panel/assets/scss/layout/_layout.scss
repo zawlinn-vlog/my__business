@@ -1,6 +1,23 @@
 //
 
-.session {
+.wrapper {
   max-width: 140rem;
   margin-inline: auto;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr 1fr;
+}
+
+.sidebar {
+  grid-area: 1 /1 /-1/ 2;
+}
+
+.navbar {
+  grid-area: 1 / 2 / 2/ -1;
+}
+
+.section {
+  grid-area: 2 / 2 / -1 / -1;
 }

@@ -1,15 +1,17 @@
 // Variables
 
-$color__secondary: #096b68;
-$light__secondary: #129990;
-$lighter__secondary: #90d1ca;
-$color__primary: #fffbde;
-$color__text: #333;
+$color__secondary: #111415;
+$light__secondary: #202628;
+$color__primary: #c6990b;
+$light__primary: #51482a;
+$color__text: #fff;
+// $color__accent: #52472c;
 
 $colors: (
   "primary": $color__primary,
+  "ltprimary": $light__primary,
   "secondary": $color__secondary,
   "ltsecondary": $light__secondary,
-  "wtsecondary": $lighter__secondary,
   "text": $color__text,
+  // "accent": $color__accent,
 );
