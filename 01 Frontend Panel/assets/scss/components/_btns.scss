@@ -4,12 +4,27 @@
 
 .btn {
   border: none;
-  background: none;
+  background-color: transparent;
   cursor: pointer;
+  outline: none;
+
+  &-submit {
+    padding: 1rem;
+
+    &:hover {
+      background-color: fun.getColor(primary);
+      transition: all 0.2s;
+    }
+
+    &:hover .fa-search {
+      color: fun.getColor(text);
+    }
+  }
 }
 
 .fas,
 .fal {
   font-size: 2.4rem;
   color: fun.getColor(primary);
+  transition: 0.2s;
 }

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>This is Frontend Panel</title>
+    <title>ငွေဝန်း — Money Changer</title>
+    <link rel="icon" href="./assets/img/logo.jpg" />
     <link rel="stylesheet" href="./assets/fontawesomepro/css/all.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
 
@@ -15,13 +16,19 @@
     <main class="wrapper">
       <!-- SIDE BAR -->
       <aside class="sidebar">
-        <a href="#" class="sidebar-link"> ငွေဝန်း — Money Changer</a>
+        <figure class="sidebar-logo">
+          <div class="sidebar-logo__pic">
+            <img src="./assets/img/logo.jpg" alt="" class="sidebar-logo__img" />
+          </div>
+          <figcaption class="sidebar-logo__caption">Zaw Linn</figcaption>
+          <p class="sidebar-logo__position">Administrator</p>
+        </figure>
         <ul class="sidebar-nav">
-          <li class="sidebar-items side__link">Home</li>
-          <li class="sidebar-items side__link">Home</li>
-          <li class="sidebar-items side__link">Home</li>
-          <li class="sidebar-items side__link">Home</li>
-          <li class="sidebar-items side__link">Home</li>
+          <li class="sidebar-items side__link">Dashboard</li>
+          <li class="sidebar-items side__link">Financial</li>
+          <li class="sidebar-items side__link">Profit</li>
+          <li class="sidebar-items side__link">Customers</li>
+          <li class="sidebar-items side__link">Management</li>
         </ul>
       </aside>
       <!-- NABAR -->
@@ -33,9 +40,16 @@
             enctype="multipart/form-data"
             method="post"
           >
-            <div class="form-search">
-              <input type="search" name="search" id="search" class="search" />
-              <button type="submit">search</button>
+            <div class="navbar-form__container">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                class="navbar-form__search"
+              />
+              <button type="submit" class="btn btn-submit">
+                <i class="fal fa-search"></i>
+              </button>
             </div>
           </form>
           <div class="navbar-noti">
@@ -50,7 +64,8 @@
                 <div class="user-pic">
                   <img src="https://placehold.co/50" alt="" class="user-img" />
                 </div>
-                <p class="user-name">Username</p>
+                <p class="user-name">Zaw Linn</p>
+                <i class="far fa-angle-down"></i>
               </div>
               <ul class="user-action d-none">
                 <ul class="user-action__items">

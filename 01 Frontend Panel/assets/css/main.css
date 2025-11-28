@@ -40,6 +40,36 @@ ol {
   display: none;
 }
 
+.sidebar-logo {
+  color: var(--primary-color) !important;
+  text-align: center;
+  cursor: pointer;
+}
+.sidebar-logo__pic {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 0.3rem solid var(--primary-color);
+}
+.sidebar-logo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.sidebar-logo__img:hover {
+  scale: 1.1;
+}
+.sidebar-logo__caption {
+  font-size: 2.4rem;
+}
+.sidebar-logo__position {
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
 .navbar-container, .navbar-noti, .user-profile {
   display: flex;
   justify-content: space-between;
@@ -47,10 +77,28 @@ ol {
 }
 
 .navbar {
-  padding-inline: 5rem;
+  padding-top: 2rem;
 }
 .navbar-container {
   font-size: 1.8rem;
+}
+.navbar-form {
+  flex: 0 1 30%;
+}
+.navbar-form__container {
+  background-color: var(--ltsecondary-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+.navbar-form__search {
+  color: var(--text-color);
+  background-color: transparent;
+  padding: 1rem 2rem;
+  width: inherit;
+  border: none;
+  outline: none;
 }
 
 .navbar-noti {
@@ -58,14 +106,13 @@ ol {
 }
 
 .user-profile {
-  gap: 0.5rem;
+  gap: 1rem;
+  cursor: pointer;
 }
 .user-pic {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid tomato;
-  padding: 1px;
   overflow: hidden;
 }
 .user-pic:hover .user-img {
@@ -80,14 +127,26 @@ ol {
 
 .btn {
   border: none;
-  background: none;
+  background-color: transparent;
   cursor: pointer;
+  outline: none;
+}
+.btn-submit {
+  padding: 1rem;
+}
+.btn-submit:hover {
+  background-color: var(--primary-color);
+  transition: all 0.2s;
+}
+.btn-submit:hover .fa-search {
+  color: var(--text-color);
 }
 
 .fas,
 .fal {
   font-size: 2.4rem;
   color: var(--primary-color);
+  transition: 0.2s;
 }
 
 .wrapper {
@@ -95,8 +154,9 @@ ol {
   margin-inline: auto;
   height: 100vh;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto repeat(3, 1fr);
   grid-template-rows: auto 1fr 1fr;
+  gap: 2rem;
 }
 
 .sidebar {
